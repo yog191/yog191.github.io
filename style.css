@@ -1,1 +1,11 @@
+/* Okay, I have lots of CSS scattered and written, tidy up, and  start with basic pieces of CSS and also
+pieces played with in different containers. and then create the ids to link to different parts in HTML script- 
+cf .doc for the different parts that are needed */
 
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #1f5d6e;
+    color: #fff;
+}
