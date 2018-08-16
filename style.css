@@ -9,3 +9,272 @@ body {
     background-color: #1f5d6e;
     color: #fff;
 }
+
+h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Lobster;
+    letter-spacing:0.1em;
+}
+a {
+    color: orange;
+}
+.page-table {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+.page-row {
+    background: #1f5d6e;
+    color:#fff;
+}
+.linksDivForMiddle {
+    max-width: 1000px;
+    margin: auto;
+}
+.center {
+    text-align: center;
+}
+
+.leftDiv {
+    float:left;
+}
+.rightDiv {
+    float: right;
+}
+
+.cinzelFont {
+    font: normal normal normal 44px/1.4em Lobster,serif;
+    color: #2F3A5E;
+}
+.font_onBGAnimated {
+    font: normal normal normal 18px/1.4em Lobster,serif;
+    color: #2F3A5E;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    margin: auto;
+}
+    .font_onBGAnimated span {
+        background: rgba(255,255,255, 0.5);
+        border-radius:100%;
+        padding: 10px;
+    }
+.cinzelFont span {
+    background: rgba(255,255,255, 0.5);
+    padding:7px;
+}
+
+.middleOfFirstFrame {
+    text-align: center;
+    /*width: 70%;
+    height: 20%;*/
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+/* the links to scroll through webpage- css code below, just hookup to HTML with class/ids etc */
+
+.threeLinksForFrames {
+    float: right;
+    padding-right: 30px;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    background: rgba(255,255,255, .8);
+    padding-left: 35px;
+}
+
+.frameLinksImg {
+    float: right;
+    padding:10px;
+}
+.myPathImg {
+    float: left;
+    padding: 10px;
+    margin-left: 32px;
+}
+.paddingTen{
+    padding-top:10px;
+}
+.paddingLeftTen {
+    padding-left:10px;
+}.noTopMargin {
+    margin-top: 0px;
+}
+.clearfix {
+    overflow: auto;
+}
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+/*Bulk of code for images in background */
+
+.multicolrAnimation {
+    animation: color-me-in 30s linear infinite;
+    background: url("images/bg1.jpg") no-repeat;
+    position: relative;
+    width: 100%;
+    /*max-height: 800px;*/
+    min-height: 300px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-color: #7ec0ee;
+}
+
+
+    @keyframes color-me-in {
+        0% {
+            background: url("images/bg1.jpg") no-repeat;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-color: #7ec0ee;
+           
+
+        }
+        /* Adding a step in the middle */
+        50% {
+            background: url("images/bg2.jpg") no-repeat;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-color: #7ec0ee;
+        }
+
+        100% {
+            background: url("images/bg3large.PNG") no-repeat;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-color: #7ec0ee;
+        }
+       
+    }
+
+
+@media only screen and (max-width: 600px) {
+    .multicolrAnimation {
+        min-height: 200px;
+        height: 70vh;
+    }
+}
+
+/* arrow, if cn't get to work perfectly, just take this shit out or comment out*/
+
+a#topbutton {
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+a#topbutton:link, aa#topbutton:visited {
+    background: url(images/model2_yellow.png) center center no-repeat;
+}
+
+.topwrapwrapper {
+    position: relative;
+    z-index: 0;
+    min-height: 900px;
+    width: 100%;
+    float: left;
+}
+
+
+.topwrap {
+    position: absolute;
+    z-index: 100;
+    top: 300px;
+    width: 100%;
+    float: left;
+}
+
+
+
+.topbuttonwrapper {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 62px;
+    top:80%;
+    text-align:center;
+    color:#fff;
+}
+
+
+a#topbutton:link, aa#topbutton:visited {
+    width: 102px;
+    height: 62px;
+    opacity: 0.7;
+    display: block;
+    margin: 0 auto;
+}
+
+a#topbutton:hover {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+

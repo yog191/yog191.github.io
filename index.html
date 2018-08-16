@@ -1,4 +1,3 @@
-<!-- Start with Basic HTML layout, got lots of random pieces of CSS, can add accordingly once structured here and HTML done -->
 
 <!DOCTYPE html>
 
@@ -6,69 +5,53 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
-<!-- <link href="NAMEOFCSSHERE.css?v=1.0" rel="stylesheet" /> -->    
+    <link href="style.css?v=1.0" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <title>Layout</title>
 
 </head>
-
 <body>
-  
-  <div>
 
-        <div>
-            <div>
-                <a> <img src="images/frameLink3.jpg" height="30" title="Links" width="30" alt="Links"></a>
-                <a> <img src="images/frameLink2.jpg"  height="30" title="Why i want this" width="30" alt="Why i want this"></a>
+    <div class="page-table">
 
-                <a> <img src="images/frameLink1.jpg" height="30" title="My Path" width="30" alt="My Path"></a>
- <a> <img src="images/home.png" height="30" title="Home" width="30" alt="Home"></a>
+        <div class="page-row">
+            <div class="threeLinksForFrames">
+                <a href="#frame4Div" title="Links"> <img src="images/frameLink3.jpg" class="frameLinksImg" height="30" title="Links" width="30" alt="Links"></a>
+                <a href="#frame3Div" title="Why i want this"> <img src="images/frameLink2.jpg" class="frameLinksImg" height="30" title="Why i want this" width="30" alt="Why i want this"></a>
+
+                <a href="#frame2Div" title="My Path"> <img src="images/frameLink1.jpg" class="frameLinksImg" height="30" title="My Path" width="30" alt="My Path"></a>
+ <a href="#frame1Div" title="Home"> <img src="images/home.png" class="frameLinksImg" height="30" title="Home" width="30" alt="Home"></a>
             </div>
         </div>
 
-            <div>
+            <div class="page-row">
 
 
-                <div>
-
-                    <div>
-                        <h1></h1>
-                        <h1>
+                <div class="multicolrAnimation" id="frame1Div">
+                 
+                    <div class="middleOfFirstFrame">
+                        <h1 class="font_onBGAnimated" id="greeting" style="text-align:center;"></h1>
+                        <h1 class="cinzelFont">
                             <span>
-                                Welcome to Yogun’s Webpage.
+                                Welcome to Yogun’s Webpage
                             </span>
                         </h1>
                     </div>
 
-                    <div>
+                    <div class="topbuttonwrapper">
 
+                        <a href="#frame2Div" id="topbutton" onclick="ScrollDown();return false;"></a>
                         <span>SCROLL DOWN</span>
                     </div>
                 </div>
 
             </div>
-            <div>
-                <h2> My Path Thus Far</h2>
-                <div>
-                    <div>
+            <div id="frame2Div" class="page-row">
+                <h2 class="center"> My Path Thus Far</h2>
+                <div class="">
+                    <div class="textJustify ">
                         I had cancer twice as a child and consequently fell behind national curriculum. I enrolled in Kumon Math and my Ma brought me books from school and local library to pour over. I got better and kept working and teaching myself in the way I had been whilst in hospital. I knew when older I wanted to give back. Medicine was a natural path but I take sadness way too much to heart and am quite sensitive on such things and also cannot rationalise the fact that I can train 100 hrs per week and still have people die in my care. I decided when around 14 to earn as much money and deploy it smartly (only years later would I hear the term Effective Altruism cited by the charity 80000hrs). I headed straight into finance after my studies having been awarded a Scholarship to intern in New York as well as trading desks in London. However, I felt quite physically and mentally sick in this period and felt a sense of degradation in character. I stopped this route, self-trained in baking sourdough breads and gained an employment offer at The Bread Factory. I found this a fun way to regain myself somewhat and decided to switch into helping the root problem which I had grown fascinated with: homelessness. I wanted to establish a body of skills/knowledge through a few years of hard graft at multiple start-ups in food/education/healthcare/finance/e-commerce and in roles spanning data analysis/operations/strategy/marketing/product/research/finance. All the while, I funded myself by tutoring.
                     </div>
+                   
 
-  <!-- if i were you, the formatting of the background on slide 1, get the rest of text done for later frames and then hit out all of CSS and link to this HTML block, and then can do JS at end.-->
-       <h2> Why I Need and want this Course?</h2>
-                <div>
-                    <div>
-                        With the experience I have gained thus far, I now need to learn software engineer skills to build my Charity. The idea is quite simple. The stats vary but circa 60% of homeless youth have mobile phones. They need to be connected to resources in food/education/healthcare/living etc. They need clear apps for this and instructions to follow (I can leverage my teaching skills for this). I am also currently doing the Udacity Python AI Nanodegree to learn about Neural Networks with intention of building models to understand behaviour patterns. I have also interviewed hundreds of homeless around London and Essex.
-                    </div>
-                    <div>
-                        Intuitively, whilst I have no background in the homelessness sector, it strike same as an incredibly complex and convoluted one in which there are tangled webs spanning multiple needs. Something I relish in any challenge is connecting ideas from seemingly disparate bodies of knowledge. For example, I used my work at City Pantry to inform my work at Doctor (mentioned above). This sort of cross-pollination is a micro-example of what I need to build to at least begin to help make a dent in this overwhelmingly challenging sector.
-                    </div>
-                </div>
-            </div>
-
- <!-- Get hyperlinks in place now for github, codewars, etc--> 
-         Codewars: https://www.codewars.com/users/saiyan91
-         Github: https://github.com/yog191/yog191.github.io
-         FCC: https://www.freecodecamp.org/yogi
-              
-  </body>
+   
