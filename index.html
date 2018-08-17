@@ -182,6 +182,74 @@
 
             </div>
 
+  <!--  JS codes-->
   
- <!-- Check JS code and ensure it is all good and then paste here-->
+<script type="text/javascript">
+            var currentTime = new Date();
+            //getHour() function will retrieve the hour from current time
+            if (currentTime.getHours() < 12)
+                document.getElementById('greeting').innerHTML = "<span style='letter-spacing: 0.2em;background: rgba(255,255,255, 0.5)'>Good Morning!! </span>";
+            else if (currentTime.getHours() < 17)
+                document.getElementById('greeting').innerHTML = "<span style='letter-spacing: 0.2em;background: rgba(255,255,255, 0.5)'>Good Afternoon!! </span>";
+            else
+                document.getElementById('greeting').innerHTML = "<span style='letter-spacing: 0.2em;background: rgba(255,255,255, 0.5)'>Good Evening!! </span>";
+            function ScrollDown() {
+                $('html, body').animate({
+                    scrollTop: $('#frame2Div').offset().top
+                }, 'slow');
+            }
+
+
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("slide");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+
+
+            showSlidesAuto();
+
+            function showSlidesAuto() {
+                var i;
+                var slides = document.getElementsByClassName("slide");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlidesAuto, 8000); // Change image every 5 seconds
+            }
+        </script>
+</body>
+</html>
+
    
