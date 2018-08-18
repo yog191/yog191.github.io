@@ -8,6 +8,7 @@ yog191.github.io/index.html
 https://github.com/yog191/yog191.github.io/blob/master/index.html
 
 I am storing where my CSS code will be here for ease of reference/search:
-
+yog191.github.io/style.css
+https://github.com/yog191/yog191.github.io/blob/master/style.css
 
 yog191.github.io/Webpage Notes and Ideas Schematic.docx : Basic idea of structure of webpage and ideas of layout etc
